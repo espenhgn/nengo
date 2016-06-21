@@ -139,7 +139,7 @@ def test_routing_recurrency_compilation(Simulator, seed, plt):
         model.thal = spa.Thalamus(model.bg)
 
     with Simulator(model) as sim:
-        pass
+        assert sim
 
 
 def test_nondefault_routing(Simulator, seed):
